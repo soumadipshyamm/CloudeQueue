@@ -19,8 +19,11 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->bigInteger('mobile_number')->nullable();
-            $table->timestamp('mobile_number_verified_at')->nullable();
             $table->mediumInteger('verification_code')->nullable()->comment('OTP used for verifying the phone number');
+            $table->timestamp('mobile_number_verified_at')->nullable();
+            $table->bigInteger('alternative_mobile_no')->nullable();
+            $table->enum('gender', ['male', 'female', 'other'])->nullable();
+            $table->string('type')->nullable();
             $table->tinyInteger('is_active')->default(true)->comment('0:Inactive,1:Active')->nullable();
             $table->string('profile_images')->nullable();
             $table->rememberToken();

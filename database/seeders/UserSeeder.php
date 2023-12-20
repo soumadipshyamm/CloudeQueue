@@ -9,6 +9,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Http\Request;
 use Faker\Factory as Faker;
+use Illuminate\Support\Facades\Hash;
 
 class UserSeeder extends Seeder
 {
@@ -22,21 +23,16 @@ class UserSeeder extends Seeder
             $faker = Faker::create();
             $user = new User();
             $user->uuid = $faker->uuid;
-            $user->first_name = 'Alsaharaa';
-            $user->last_name = $role->name;
-            $user->username = str_replace('-', '', $role->slug);
-            $user->email = str_replace('-', '.', $role->slug) . '@alsaharaa.com';
+            $user->name = $role->name;
+            $user->email = str_replace('-', '.', $role->slug) . '@cloudequeue.com';
             $user->mobile_number = random_int(1000000000, 9999999999);
             $user->email_verified_at = $faker->dateTime();
             $user->mobile_number_verified_at = $faker->dateTime();
-            $user->password = bcrypt('secret');
-            $user->registration_ip = $request->getClientIp();
+            $user->password = Hash::make('12345678');
+            $user->gender = 'male';
+            $user->type = $role->slug;
             $user->is_active = 1;
             if ($user->save()) {
-                $user->profile()->create([
-                    'uuid' => $faker->uuid,
-                    'gender' => 'male',
-                ]);
                 $user->roles()->attach($role);
                 if ($role->name == 'Super Admin') {
                     $permissions = permission::get();

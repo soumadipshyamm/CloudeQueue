@@ -40,7 +40,6 @@ class AuthController extends BaseController
                 'profile_images' => $request->profile_images,
             ]);
             $isCreateUser->roles()->attach($user_role);
-
             if ($isCreateUser) {
                 DB::commit();
                 return $this->responseJson(true, 201, 'Registration Successfully', []);

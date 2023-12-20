@@ -13,8 +13,19 @@ return new class extends Migration
     {
         Schema::create('profiles', function (Blueprint $table) {
             $table->id();
+            $table->uuid('uuid')->unique()->nullable();
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->enum('type', ['admin', 'subadmin', 'clinic', 'patient', 'doctor'])->nullable();
+            $table->string('qualifaction')->nullable()->comment('doctor');
+            $table->date('registration_date')->nullable()->comment('doctor');
+            $table->string('registration_number')->nullable()->comment('doctor');
+            $table->string('experience')->nullable()->comment('doctor');
+            $table->string('consultation_fee')->nullable()->comment('doctor');
+            $table->string('price')->nullable()->comment('doctor');
+            $table->date('dob')->nullable()->comment('patient');
+            $table->string('blood_group')->nullable()->comment('patient');
+            $table->string('allergy_medicine')->nullable()->comment('patient');
             $table->timestamps();
         });
     }
