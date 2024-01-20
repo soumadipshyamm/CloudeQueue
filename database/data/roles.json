@@ -1,0 +1,32 @@
+{
+    "roles": [
+        {
+            "name": "Super Admin",
+            "slug": "super-admin"
+        },
+        {
+            "name": "Admin",
+            "slug": "admin"
+        },
+        {
+            "name": "Doctor",
+            "slug": "doctor"
+        },
+        {
+            "name": "Patient",
+            "slug": "patient"
+        },
+        {
+            "name": "Clinic",
+            "slug": "clinic"
+        },
+        {
+            "name": "Staff",
+            "slug": "staff"
+        },
+        {
+            "name": "Receptionist",
+            "slug": "receptionist"
+        }
+    ]
+}

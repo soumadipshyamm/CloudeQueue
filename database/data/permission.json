@@ -1,0 +1,130 @@
+{
+    "permissions":[
+        {
+            "name" : "View Dashboard"
+        },
+        {
+            "name" : "Add Customer"
+        },
+        {
+            "name" : "Edit Customer"
+        },
+        {
+            "name" : "Delete Customer"
+        },
+        {
+            "name" : "View Customer"
+        },
+        {
+            "name" : "Add Admin User"
+        },
+        {
+            "name" : "Edit Admin User"
+        },
+        {
+            "name" : "Delete Admin User"
+        },
+        {
+            "name" : "View Admin User"
+        },
+        {
+            "name" : "Add Driver"
+        },
+        {
+            "name" : "Edit Driver"
+        },
+        {
+            "name" : "Delete Driver"
+        },
+        {
+            "name" : "View Driver"
+        },
+        {
+            "name" : "Add Caller User"
+        },
+        {
+            "name" : "Edit Caller User"
+        },
+        {
+            "name" : "Delete Caller User"
+        },
+        {
+            "name" : "View Caller User"
+        },
+        {
+            "name" : "Add Zone"
+        },
+        {
+            "name" : "Edit Zone"
+        },
+        {
+            "name" : "View Zone"
+        },
+        {
+            "name" : "Delete Zone"
+        },
+        {
+            "name" : "Add Zone Fare"
+        },
+        {
+            "name" : "Edit Zone Fare"
+        },
+        {
+            "name" : "View Zone Fare"
+        },
+        {
+            "name" : "Delete Zone Fare"
+        },
+        {
+            "name" : "Add Zone Fare"
+        },
+        {
+            "name" : "Edit Zone Fare"
+        },
+        {
+            "name" : "View Zone Fare"
+        },
+        {
+            "name" : "Delete Zone Fare"
+        },
+        {
+            "name" : "Add Booking"
+        },
+        {
+            "name" : "Edit Booking"
+        },
+        {
+            "name" : "View Booking"
+        },
+        {
+            "name" : "Delete Booking"
+        },
+        {
+            "name" : "Add Service Type"
+        },
+        {
+            "name" : "Edit Service Type"
+        },
+        {
+            "name" : "View Service Type"
+        },
+        {
+            "name" : "Delete Service Type"
+        },
+        {
+            "name" : "Add Vehicle Type"
+        },
+        {
+            "name" : "Edit Vehicle Type"
+        },
+        {
+            "name" : "View Vehicle Type"
+        },
+        {
+            "name" : "Delete Vehicle Type"
+        },
+        {
+            "name" : "View Report"
+        }
+    ]
+}

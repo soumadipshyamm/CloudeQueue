@@ -1,0 +1,88 @@
+.doctor-img-name-style {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.doctor-name-style {
+    font-size: 20px;
+    font-weight: bold;
+}
+.doctor-details-style {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 8px 13px;
+    border-bottom: #e5e5e5 1px solid;
+    margin-bottom: 5px;
+    background: #fbfbfb;
+}
+.doctor-details-lable-style {
+    width: 250px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #898787;
+}
+.clinic_staff_heading_style {
+    margin-top: 10px;
+    font-size: 19px;
+}
+.clinic-staff-name-style {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.clinicsheading_title{
+    background: #2087c3;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 21px;
+    }
+.clinicsheading_logo{
+    margin: 24px 17px;
+    padding: 0px 0px;
+    width: 120px;
+    height: 120px;
+    border: #f1f1f1 1px solid;
+    position: relative;
+    border-radius: 6px;
+    }
+.clinicsheading_logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+     }
+  .dataTables_filter {
+    float: right;
+    }
+.pagination {
+    justify-content: end;
+    }
+.dataTables_length .custom-select {
+    appearance: none !important;
+    }
+.custom-select {
+    width: 36%;
+    }
+    .slot_statsb_single {
+        background: #bfeef8;
+        border-radius: 10px;
+        box-shadow: rgba(219, 216, 216, 0.18) -1px 1px 5px 1px;
+        position: relative;
+        overflow: hidden;
+        transition: all ease-in 0.3s;
+        margin-bottom: 16px;
+        box-shadow: 5px 4px 6px 2px #c3bfbf;
+        width: 103px;
+    }
+    .slot_text-dsgn {
+        font-size: 15px;
+        font-weight: 600;
+        color: #324a50;
+    }
+    .slot_statsb_single:hover {
+        -ms-transform: scale(1.5); /* IE 9 */
+        -webkit-transform: scale(1.5); /* Safari 3-8 */
+        transform: scale(1.2);
+      }

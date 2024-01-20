@@ -1,0 +1,28 @@
+{
+    "categorys": [
+        {
+            "name": "General Physician"
+        },
+        {
+            "name": "Skin & Hair"
+        },
+        {
+            "name": "Dental Care"
+        },
+        {
+            "name": "Mental Health"
+        },
+        {
+            "name": "Child Specialists"
+        },
+        {
+            "name": "Women Health"
+        },
+        {
+            "name": "Ear Nose & Throat"
+        },
+        {
+            "name": "Bone & Joint"
+        }
+    ]
+}
